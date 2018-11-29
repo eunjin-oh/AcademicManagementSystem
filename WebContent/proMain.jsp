@@ -12,9 +12,9 @@
   <body>
     <header id="header">
       <div class="navbar">
-        <a href="pro_main.html">교수</a>
-        <a href="pro/registerReport.html">성적처리</a>
-        <a href="pro/registerLecturePlan.html">강의계획서등록</a>
+        <a href="pro_main.jsp">교수</a>
+        <a href="pro/registerReport.jsp">성적처리</a>
+        <a href="pro/registerLecturePlan.jsp">강의계획서등록</a>
       </div>
     </header>
   </body>
