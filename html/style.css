@@ -51,7 +51,7 @@ td{
   padding: 7px;
 }
 
-#infotable{
+#infotable, #reporttable{
   width: 60%;
   padding: 20px;
   text-align: center;
