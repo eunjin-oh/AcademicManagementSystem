@@ -1,3 +1,12 @@
+<%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+        <%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.io.IOException"%>
+<%@page import="java.io.*"%>
+<%@page import="java.io.File"%>
+<%@page import="java.text.DecimalFormat" %>
+<%@page import="java.text.SimpleDateFormat" %>
+<%@page import="java.util.Calendar" %>
+<% request.setCharacterEncoding("euc-kr"); %>
 <!DOCTYPE html>
 <html lang="ko">
   <head>
