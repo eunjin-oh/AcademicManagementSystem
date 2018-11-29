@@ -13,7 +13,11 @@
 	String passwd = request.getParameter("password");
 	String type = request.getParameter("login");
 	
-	FileReader filereader = new FileReader("C:/Users/JHYUN/eclipse-workspace/SETerm/AcademicManagementSystem/ID/"+id+".txt");
+	String fileName = id+".txt";
+	String fileDir = "ID";
+	String filePath = request.getRealPath(fileDir) + "/";
+	filePath += fileName;
+	FileReader filereader = new FileReader(filePath);
 	BufferedReader bufReader = new BufferedReader(filereader);
 	String name = bufReader.readLine();
 	String pass = bufReader.readLine();
@@ -26,7 +30,7 @@
 	%>	<input type="hidden" name="id" value="">
 	
 	<%
-		response.sendRedirect( type+"Main.jsp");
+		response.sendRedirect(type+"Main.jsp");
 	}else{%>
 			<script>
 			alert("비밀번호가 맞지 않습니다.");
